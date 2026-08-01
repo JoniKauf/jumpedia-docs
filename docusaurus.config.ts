@@ -43,13 +43,13 @@ const config: Config = {
     ],
 
     themeConfig: {
-        image: "img/docusaurus-social-card.jpg",
+        image: "img/jumpedia.png",
 
         navbar: {
             title: "Jumpedia Docs",
             logo: {
                 alt: "Jumpedia",
-                src: "img/logo.svg",
+                src: "img/jumpedia-transparent-no-text.png",
             },
         },
 
@@ -57,6 +57,14 @@ const config: Config = {
             style: "dark",
             copyright: `Copyright © ${new Date().getFullYear()} Jumpedia`,
         },
+
+        metadata: [
+            {
+                name: "keywords",
+                content:
+                    "Jumpedia, documentation, tasks, communities, attributes, DSL",
+            },
+        ],
 
         prism: {
             theme: require("prism-react-renderer").themes.github,
