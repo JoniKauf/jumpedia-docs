@@ -14,7 +14,7 @@ const config: Config = {
 
     trailingSlash: false,
     staticDirectories: ["static"],
-    
+
     onBrokenLinks: "throw",
     markdown: {
         hooks: {
@@ -72,6 +72,12 @@ const config: Config = {
         prism: {
             theme: require("prism-react-renderer").themes.github,
             darkTheme: require("prism-react-renderer").themes.dracula,
+        },
+
+        colorMode: {
+            defaultMode: "dark",
+            disableSwitch: false,
+            respectPrefersColorScheme: false,
         },
     },
 };
