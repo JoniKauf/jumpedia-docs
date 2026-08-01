@@ -9,7 +9,7 @@ const config: Config = {
     url: "https://docs.jumpedia.dev",
     baseUrl: "/",
 
-    organizationName: "Jumpedia",
+    organizationName: "JoniKauf",
     projectName: "jumpedia-docs",
 
     onBrokenLinks: "throw",
