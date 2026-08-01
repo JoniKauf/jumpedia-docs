@@ -1,0 +1,8 @@
+{
+    "label": "Staff",
+    "position": 2,
+    "link": {
+        "type": "doc",
+        "id": "commands/staff/index"
+    }
+}

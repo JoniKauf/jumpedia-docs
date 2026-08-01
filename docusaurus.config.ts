@@ -2,7 +2,7 @@ import type { Config } from "@docusaurus/types";
 import type * as Preset from "@docusaurus/preset-classic";
 
 const config: Config = {
-    title: "Jumpedia Docs",
+    title: "Jumpedia Documentation",
     tagline: "Documentation for Jumpedia",
     favicon: "img/favicon.ico",
 
@@ -51,43 +51,10 @@ const config: Config = {
                 alt: "Jumpedia",
                 src: "img/logo.svg",
             },
-            items: [
-                {
-                    type: "docSidebar",
-                    sidebarId: "docs",
-                    position: "left",
-                    label: "Documentation",
-                },
-                {
-                    href: "https://github.com/JoniKauf/jumpedia",
-                    label: "GitHub",
-                    position: "right",
-                },
-            ],
         },
 
         footer: {
             style: "dark",
-            links: [
-                {
-                    title: "Documentation",
-                    items: [
-                        {
-                            label: "Getting Started",
-                            to: "/getting-started/installation",
-                        }
-                    ],
-                },
-                {
-                    title: "Community",
-                    items: [
-                        {
-                            label: "GitHub",
-                            href: "https://github.com/Jumpedia",
-                        },
-                    ],
-                },
-            ],
             copyright: `Copyright © ${new Date().getFullYear()} Jumpedia`,
         },
 

@@ -1,0 +1,57 @@
+---
+title: Home
+hide_title: true
+sidebar_position: 1
+sidebar_label: Home
+pagination_next: null
+pagination_prev: null
+---
+
+import Link from "@docusaurus/Link";
+
+<div
+    className="home-hero"
+    style={{
+        textAlign: "center",
+        padding: "5rem 2rem",
+    }}
+>
+    <h1>Jumpedia Documentation</h1>
+
+    <div
+        style={{
+            fontSize: "1.25rem",
+            maxWidth: "700px",
+            margin: "0 auto 2rem",
+        }}
+    >
+        {"Welcome to the documentation of "}
+        <strong>Jumpedia</strong>
+        {"!"}
+        <br />
+        {"Use the sidebar to the left to navigate through the documentation."}
+    </div>
+
+    <div
+        style={{
+            display: "flex",
+            justifyContent: "center",
+            gap: "1rem",
+            flexWrap: "wrap",
+        }}
+    >
+        <Link
+            className="button button--primary home-button"
+            to="/getting-started/"
+        >
+            {"Getting Started"}
+        </Link>
+
+        <Link
+            className="button button--secondary home-button"
+            to="/commands"
+        >
+            {"Commands"}
+        </Link>
+    </div>
+</div>
