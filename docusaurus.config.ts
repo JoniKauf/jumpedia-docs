@@ -13,7 +13,11 @@ const config: Config = {
     projectName: "jumpedia-docs",
 
     onBrokenLinks: "throw",
-    onBrokenMarkdownLinks: "warn",
+    markdown: {
+        hooks: {
+            onBrokenMarkdownLinks: "warn",
+        },
+    },
 
     i18n: {
         defaultLocale: "en",
@@ -55,7 +59,7 @@ const config: Config = {
                     label: "Documentation",
                 },
                 {
-                    href: "https://github.com/Jumpedia/jumpedia",
+                    href: "https://github.com/JoniKauf/jumpedia",
                     label: "GitHub",
                     position: "right",
                 },
@@ -71,7 +75,7 @@ const config: Config = {
                         {
                             label: "Getting Started",
                             to: "/getting-started/installation",
-                        },
+                        }
                     ],
                 },
                 {
