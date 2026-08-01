@@ -12,6 +12,9 @@ const config: Config = {
     organizationName: "JoniKauf",
     projectName: "jumpedia-docs",
 
+    trailingSlash: false,
+    staticDirectories: ["static"],
+    
     onBrokenLinks: "throw",
     markdown: {
         hooks: {
