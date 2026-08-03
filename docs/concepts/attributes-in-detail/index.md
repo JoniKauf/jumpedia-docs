@@ -25,3 +25,9 @@ The following sections explain these properties in detail:
 - [Types and Kinds](/concepts/attributes-in-detail/types-and-kinds)
 - [Field Configuration](/concepts/attributes-in-detail/field-configuration)
 - [Collections](/concepts/attributes-in-detail/collections)
+
+## In this section
+
+import DocCardList from '@theme/DocCardList';
+
+<DocCardList />

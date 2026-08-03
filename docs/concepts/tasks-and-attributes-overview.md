@@ -38,7 +38,7 @@ As a more concrete example:
 
 Every list defines its own set of attributes. Together, these attributes describe the structure of every task in that list.
 
-For example, a **Books** list might define the following attributes:
+For example, a **Book** list might define the following attributes:
 
 - Name
 - Author
