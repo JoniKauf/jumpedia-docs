@@ -4,7 +4,7 @@ description: Learn what Jumpedia is and how it helps communities manage tasks an
 sidebar_position: 1
 ---
 
-Jumpedia is a Discord bot that helps communities organize, manage, and track [tasks](/concepts/tasks).
+Jumpedia is a Discord bot that helps communities organize, manage, and track [tasks](/concepts/tasks-and-attributes-overview).
 
 "Task" is the abstract term for any completable objective, either in real life or online. Examples include books, movies, speedruns, trickjumps, challenge runs, games, or anything else a community wants to track.
 
