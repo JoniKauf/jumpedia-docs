@@ -41,7 +41,7 @@ Examples:
 - Star Rating
 - Comments
 
-Whenver a user completes a task by [giving it to themselves](/commands/basic/task#task-give), the fields of user attributes for the given task can be set. Then the user has custom data assigned to their completion of the task.
+Whenver a user completes a task by [giving it to themselves](/commands/task#task-give), the fields of user attributes for the given task can be set. Then the user has custom data assigned to their completion of the task.
 
 ## Kinds
 

@@ -69,6 +69,6 @@ For example:
 - The same user can be a member of multiple communities.
 - Each community can assign that user a different rank and settings.
 
-Users and members are very similar concepts and therefore all commands of users and members are located in the [user command group](/commands/basic/user) instead of being split up.
+Users and members are very similar concepts and therefore all commands of users and members are located in the [user command group](/commands/user) instead of being split up.
 
 

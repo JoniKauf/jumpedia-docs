@@ -57,6 +57,8 @@ Shows information about the specified task.
 
 Shows information about the specified task combined with the target user's user field mapping.
 
+### Task Give
+
 </Command>
 
 ## Privileged

@@ -8,7 +8,7 @@ Jumpedia is a Discord bot that helps communities organize, manage, and track [ta
 
 "Task" is the abstract term for any completable objective, either in real life or online. Examples include books, movies, speedruns, trickjumps, challenge runs, games, or anything else a community wants to track.
 
-Members of a community can [give](/commands/basic/task#task-give) themselves tasks to mark them as completed. They can also provide additional information, such as proof or other user-specific data.
+Members of a community can [give](/commands/task#task-give) themselves tasks to mark them as completed. They can also provide additional information, such as proof or other user-specific data.
 
 Community staff can manage and organize tasks in many different ways using fully customizable attributes, allowing each community to define its own structure and workflow.
 
