@@ -1,0 +1,177 @@
+.command {
+    border: 1px solid var(--ifm-color-emphasis-300);
+
+    border-radius: 10px;
+
+    overflow: hidden;
+
+    margin: 1.5rem 0;
+}
+
+
+/* Command */
+
+.commandCode {
+    position: relative;
+
+    display: block;
+
+    width: 100%;
+
+    padding: 1rem;
+
+    background: var(--ifm-color-emphasis-100);
+
+    font-size: 1.1rem;
+
+    font-weight: 700;
+}
+
+.copyButton {
+    position: absolute;
+
+    right: 1rem;
+
+    top: 50%;
+
+    transform: translateY(-50%);
+
+    opacity: 0;
+
+    padding: 0.25rem 0.6rem;
+
+    border: 1px solid var(--ifm-color-emphasis-300);
+
+    border-radius: 6px;
+
+    background: var(--ifm-background-color);
+
+    color: var(--ifm-font-color-base);
+
+    cursor: pointer;
+
+    font-size: 0.8rem;
+
+    font-weight: 400;
+
+    transition: opacity 0.15s ease;
+}
+
+.commandCode:hover .copyButton {
+    opacity: 1;
+}
+
+.copyButton:hover {
+    background: var(--ifm-color-emphasis-200);
+}
+
+
+/* Sections */
+
+.section {
+    padding: 1rem;
+}
+
+.section + .section {
+    border-top: 1px solid var(--ifm-color-emphasis-200);
+}
+
+.sectionTitle {
+    margin: 0 0 1rem;
+
+    font-size: 1rem;
+
+    font-weight: 600;
+}
+
+
+/* Arguments */
+
+.arguments {
+    display: grid;
+
+    grid-template-columns: max-content 1fr;
+
+    column-gap: 1rem;
+
+    row-gap: 1rem;
+
+    align-items: start;
+}
+
+.argumentName {
+    white-space: nowrap;
+}
+
+.argumentName code {
+    font-weight: 600;
+}
+
+.argumentDescription {
+    line-height: 1.5;
+}
+
+
+/* Permissions */
+
+.permissions {
+    display: flex;
+
+    flex-direction: column;
+
+    gap: 0.75rem;
+}
+
+.permission {
+    display: flex;
+
+    flex-direction: column;
+
+    gap: 0.25rem;
+}
+
+.permissionName {
+    font-style: italic;
+}
+
+.permissionDescription {
+    color: var(--ifm-color-emphasis-700);
+
+    line-height: 1.5;
+}
+
+.permissionsDescription {
+    margin-top: 0.75rem;
+
+    color: var(--ifm-color-emphasis-700);
+
+    line-height: 1.5;
+}
+
+.noPermission {
+    color: var(--ifm-color-emphasis-700);
+
+    font-style: italic;
+}
+
+
+/* Description */
+
+.description {
+    line-height: 1.6;
+}
+
+
+/* Mobile */
+
+@media (max-width: 600px) {
+    .arguments {
+        grid-template-columns: 1fr;
+        
+        gap: 0.25rem;
+    }
+
+    .argumentDescription {
+        margin-bottom: 0.75rem;
+    }
+}
