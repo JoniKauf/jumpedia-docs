@@ -116,6 +116,8 @@ Creates a new community with the specified owner and limits.
 
 Deletes the current community.
 
+Every information about this community will irreversibly be deleted! This includes all lists, attributes, tasks, fields, members and their ranks and everything else that belongs to the community!
+
 </Command>
 
 

@@ -229,7 +229,9 @@ Gives the specified task to the specified user, marking it as completed. The spe
     ]}
 >
 
-Takes the specified task from the specified user, marking it as not completed. The user field mapping is also cleared.
+Takes the specified task from the specified user, marking it as not completed. 
+
+The specified user's user field mapping for the specified task is also cleared irreversibly!
 
 </Command>
 
@@ -338,7 +340,9 @@ Creates a new task in the specified list with the specified aliases and field ma
     ]}
 >
 
-Deletes the specified task from the specified list.
+Deletes the specified task from the specified list. 
+
+Every field of this task will be cleared! Every user who has obtained this task will lose it and all its associated user fields will be cleared irreversibly as well!
 
 </Command>
 

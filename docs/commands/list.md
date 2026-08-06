@@ -82,6 +82,8 @@ Creates a new list.
 
 Deletes the specified list.
 
+All tasks, attributes, fields and other data associated with this list will also be deleted irreversibly!
+
 </Command>
 
 ### Editing
