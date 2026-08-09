@@ -1,8 +1,8 @@
 {
-    "label": "Internals",
+    "label": "Core",
     "position": 1,
     "link": {
         "type": "doc",
-        "id": "dsls/internals/index"
+        "id": "dsls/core/index"
     }
 }

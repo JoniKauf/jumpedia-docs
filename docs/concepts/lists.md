@@ -1,7 +1,7 @@
 ---
 title: Lists
 description: Learn how lists organize tasks and attributes in Jumpedia.
-sidebar_position: 3
+sidebar_position: 4
 ---
 
 A list is a collection of related tasks.

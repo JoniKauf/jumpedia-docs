@@ -18,7 +18,7 @@ Commands for creating, managing, and interacting with tasks.
         {
             name: "task_name_or_alias",
             requirement: C.ArgumentRequirement.Required,
-            description: "The name or alias of a task for which to show info.",
+            description: "The name or alias of a task for which to show information.",
         },
         {
             name: "list_name",
@@ -39,7 +39,7 @@ Shows the specified task's field mapping.
         {
             name: "task_name_or_alias",
             requirement: C.ArgumentRequirement.Required,
-            description: "The name or alias of a task for which to show info.",
+            description: "The name or alias of a task for which to show information.",
         },
         {
             name: "user",

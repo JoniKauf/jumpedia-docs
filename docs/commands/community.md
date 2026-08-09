@@ -18,7 +18,7 @@ Commands for creating, managing and interacting with communities.
         {
             name: "community_name",
             requirement: C.ArgumentRequirement.Optional,
-            description: "The name of the community for which to show info. If unspecified, the current community.",
+            description: "The name of the community for which to show information. If unspecified, the current community.",
         },
     ]}
     permissions={[]}

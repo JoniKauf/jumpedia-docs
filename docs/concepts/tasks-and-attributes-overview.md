@@ -1,7 +1,7 @@
 ---
 title: Tasks And Attributes Overview
 description: Learn how tasks and attributes work together to organize information in Jumpedia.
-sidebar_position: 4
+sidebar_position: 5
 ---
 
 Tasks are the main concept a community aims to track with Jumpedia.

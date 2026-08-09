@@ -30,7 +30,10 @@ export default function Command({
 
     return (
         <div className={styles.command}>
-            <code className={styles.commandCode}>
+            <code 
+                id={command.replaceAll(" ", "-")}
+                className={styles.commandCode}
+            >
                 /{command}
 
                 <button

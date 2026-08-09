@@ -18,7 +18,7 @@ Commands for creating, managing and interacting with lists.
         {
             name: "list_name",
             requirement: C.ArgumentRequirement.Required,
-            description: "The name of the list for which to show info.",
+            description: "The name of the list for which to show information.",
         },
     ]}
     permissions={[]}

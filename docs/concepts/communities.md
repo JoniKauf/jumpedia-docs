@@ -1,7 +1,7 @@
 ---
 title: Communities
 description: Learn how Jumpedia communities work and how they organize shared data.
-sidebar_position: 1
+sidebar_position: 2
 ---
 
 A community in Jumpedia represents an actual existing community of people sharing the same interest. 
