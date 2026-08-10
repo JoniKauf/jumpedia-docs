@@ -6,11 +6,9 @@ sidebar_position: 6
 
 This is the **about** page of Jumpedia. It talks about everything that talks about meta things like comments on the documentation itself or some other topics about Jumpedia.
 
+## Jumpedia's History
 
-
-## Who created Jumpedia and why?
-
-Jumpedia was first created between 2022 and 2023 for a very specific use-case. It was a hardcoded bot for the Super Mario Odyssey Trickjumping community to store trickjumps, since the old bot of the community broke and didn't support all features we needed. Its code can still be found [here](https://github.com/JoniKauf/JumpediaOld). Be warned though: it was my first ever Python project and the code therefore aged very badly!
+Jumpedia was first created between 2022 and 2023 by JoniKauf for a very specific use-case. It was a hardcoded bot for the Super Mario Odyssey Trickjumping community to store trickjumps, since the old bot of the community broke and didn't support all features we needed. Its code can still be found [here](https://github.com/JoniKauf/JumpediaOld). Be warned though: it was my first ever Python project and the code therefore aged very badly!
 
 This worked well for a while, but then other communities asked whether the bot could be used for their community as well. It could not, since everything was hardcoded to work only for SMO trickjumping (which also made it a lot simpler of course). We then got the idea to transform Jumpedia into a general purpose, community and task managing Discord bot, usable by any community.
 
