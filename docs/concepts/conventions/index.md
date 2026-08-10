@@ -10,3 +10,5 @@ These conventions help keep information consistent across communities and make J
 ## In this section
 
 import DocCardList from '@theme/DocCardList';
+
+<DocCardList/>
