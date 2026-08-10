@@ -62,6 +62,8 @@ Changes the selected list of the specified user.
 
 ## Staff
 
+### Editing
+
 <Command
     command="user edit meta_rank"
     args={[

@@ -65,17 +65,17 @@ Shows the specified task's field mapping and additionally the user's user field 
         {
             name: "filter_dsl",
             requirement: C.ArgumentRequirement.Optional,
-            description: "The filter to apply, specified via the `Filter DSL`. If unspecified, no filter is applied.",
+            description: "The filter to apply, specified via the Filter DSL. If unspecified, no filter is applied.",
         },
         {
             name: "sort_dsl",
             requirement: C.ArgumentRequirement.Optional,
-            description: "The sort order to apply, specified via the `Sort DSL`. If unspecified, the tasks are sorted by name.",
+            description: "The sort order to apply, specified via the Sort DSL. If unspecified, the tasks are sorted by name.",
         },
         {
             name: "yield_dsl_sequence",
             requirement: C.ArgumentRequirement.Optional,
-            description: "The attributes to display, specified via the `Sequence DSL`. If unspecified, the name and alias attributes will be displayed.",
+            description: "The attributes to display, specified via the Sequence DSL. If unspecified, the name and alias attributes will be displayed.",
         },
         {
             name: "list_name",
@@ -101,17 +101,17 @@ Shows all tasks' field mappings in the specified list matching the specified fil
         {
             name: "filter_dsl",
             requirement: C.ArgumentRequirement.Optional,
-            description: "The filter to apply, specified via the `Filter DSL`. If unspecified, no filter is applied.",
+            description: "The filter to apply, specified via the Filter DSL. If unspecified, no filter is applied.",
         },
         {
             name: "sort_dsl",
             requirement: C.ArgumentRequirement.Optional,
-            description: "The sort order to apply, specified via the `Sort DSL`. If unspecified, the tasks are sorted by name.",
+            description: "The sort order to apply, specified via the Sort DSL. If unspecified, the tasks are sorted by name.",
         },
         {
             name: "yield_dsl_sequence",
             requirement: C.ArgumentRequirement.Optional,
-            description: "The attributes to display, specified via the `Sequence DSL`. If unspecified, the name, alias and all user attributes will be displayed.",
+            description: "The attributes to display, specified via the Sequence DSL. If unspecified, the name, alias and all user attributes will be displayed.",
         },
         {
             name: "list_name",
@@ -137,17 +137,17 @@ Shows all field mappings together with the specified user's user field mappings 
         {
             name: "filter_dsl",
             requirement: C.ArgumentRequirement.Optional,
-            description: "The filter to apply, specified via the `Filter DSL`. If unspecified, no filter is applied.",
+            description: "The filter to apply, specified via the Filter DSL. If unspecified, no filter is applied.",
         },
         {
             name: "sort_dsl",
             requirement: C.ArgumentRequirement.Optional,
-            description: "The sort order to apply, specified via the `Sort DSL`. If unspecified, the tasks are sorted by name.",
+            description: "The sort order to apply, specified via the Sort DSL. If unspecified, the tasks are sorted by name.",
         },
         {
             name: "yield_dsl_sequence",
             requirement: C.ArgumentRequirement.Optional,
-            description: "The attributes to display, specified via the `Sequence DSL`. If unspecified, the name and alias attributes will be displayed.",
+            description: "The attributes to display, specified via the Sequence DSL. If unspecified, the name and alias attributes will be displayed.",
         },
         {
             name: "list_name",
@@ -175,7 +175,7 @@ Shows all field mappings of tasks that have not yet been given to the specified 
         {
             name: "user_field_mapping_dsl",
             requirement: C.ArgumentRequirement.Optional,
-            description: "The user field mapping to assign, specified via the `Mapping DSL`. If unspecified, it is considered empty.",
+            description: "The user field mapping to assign, specified via the Mapping DSL. If unspecified, it is considered empty.",
         },
         {
             name: "user",
@@ -246,7 +246,7 @@ The specified user's user field mapping for the specified task is also cleared i
         {
             name: "new_user_field_mapping",
             requirement: C.ArgumentRequirement.Required,
-            description: "The new user field mapping, specified via the `Mapping DSL`.",
+            description: "The new user field mapping, specified via the Mapping DSL.",
         },
         {
             name: "edit_mode",
@@ -298,12 +298,12 @@ Edits the user field mapping of the specified task for the specified user accord
         {
             name: "aliases_dsl_sequence",
             requirement: C.ArgumentRequirement.Required,
-            description: "The aliases of the task, specified via the `Sequence DSL`.",
+            description: "The aliases of the task, specified via the Sequence DSL.",
         },
         {
             name: "field_mapping_dsl",
             requirement: C.ArgumentRequirement.Required,
-            description: "The field mapping of the task, specified via the `Mapping DSL`.",
+            description: "The field mapping of the task, specified via the Mapping DSL.",
         },
     ]}
     permissions={[
@@ -390,7 +390,7 @@ Changes the name of the specified task.
         {
             name: "new_task_aliases_dsl_sequence",
             requirement: C.ArgumentRequirement.Required,
-            description: "The new aliases of the task, specified via the `Sequence DSL`.",
+            description: "The new aliases of the task, specified via the Sequence DSL.",
         },
         {
             name: "list_name",
@@ -431,7 +431,7 @@ Edits the aliases of the specified task according to the selected edit mode.
         {
             name: "new_field_mapping_dsl",
             requirement: C.ArgumentRequirement.Required,
-            description: "The new field mapping of the task, specified via the `Mapping DSL`.",
+            description: "The new field mapping of the task, specified via the Mapping DSL.",
         },
         {
             name: "edit_mode",

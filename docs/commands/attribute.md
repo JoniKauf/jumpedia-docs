@@ -89,12 +89,12 @@ Shows all attributes in the specified list.
         {
             name: "aliases_dsl_sequence",
             requirement: C.ArgumentRequirement.Required,
-            description: "The aliases of the attribute, specified via the `Sequence DSL`.",
+            description: "The aliases of the attribute, specified via the Sequence DSL.",
         },
         {
             name: "collection_dsl_mapping",
             requirement: C.ArgumentRequirement.Required,
-            description: "The collection of the attribute, specified via the `Mapping DSL`.",
+            description: "The collection of the attribute, specified via the Mapping DSL.",
         },
     ]}
     permissions={[
@@ -187,7 +187,7 @@ Changes the name of the specified attribute.
         {
             name: "new_attr_aliases_dsl_sequence",
             requirement: C.ArgumentRequirement.Required,
-            description: "The new aliases of the attribute, specified via the `Sequence DSL`.",
+            description: "The new aliases of the attribute, specified via the Sequence DSL.",
         },
         {
             name: "edit_mode",
@@ -271,7 +271,7 @@ Once the migration is complete, the limits can be changed from `0–5` to the de
         {
             name: "new_collection_dsl_mapping",
             requirement: C.ArgumentRequirement.Required,
-            description: "The new collection of the attribute, specified via the `Mapping DSL`.",
+            description: "The new collection of the attribute, specified via the Mapping DSL.",
         },
         {
             name: "edit_mode",
@@ -333,7 +333,7 @@ After the migration has completed, the temporary aliases (`Easy`, `Medium`, and 
         {
             name: "all_attribute_names_dsl_sequence",
             requirement: C.ArgumentRequirement.Required,
-            description: "The new order of all attributes, specified via the `Sequence DSL`. Every attribute in the list must be included and will be positioned according to its order in the sequence.",
+            description: "The new order of all attributes, specified via the Sequence DSL. Every attribute in the list must be included and will be positioned according to its order in the sequence.",
         },
         {
             name: "list_name",
