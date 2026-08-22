@@ -239,14 +239,15 @@ Some words have a special meaning in DSL syntax. These are represented by **keyw
 
 The lexer recognizes the following keywords:
 
-| Keyword | Purpose                                    |
-| ------- | ------------------------------------------ |
-| `if`    | Starts a conditional expression            |
-| `else`  | Provides an alternative branch             |
-| `is`    | Used for comparing equality                |
-| `not`   | Used for negative equality (`is not`)      |
-| `or`    | Combines expressions with OR               |
-| `and`   | Combines expressions with AND              |
+| Keyword    | Purpose                                                            |
+| ---------- | ------------------------------------------------------------------ |
+| `if`       | Starts a conditional expression                                    |
+| `else`     | Provides an alternative branch                                     |
+| `is`       | Used for comparing equality                                        |
+| `contains` | Used for comparing containment.                                    |                  
+| `not`      | Used for negative equality and contains (`is not`, `not contains`) |
+| `or`       | Combines expressions with OR                                       |
+| `and`      | Combines expressions with AND                                      |
 
 For example:
 
@@ -256,13 +257,17 @@ difficulty is not 5
 
 contains the keyword tokens `is` and `not`, rather than treating them as ordinary identifier tokens.
 
-Keywords are recognized only when the complete identifier matches the keyword. For example, `inside` is still an identifier token and is not interpreted as `is` followed by `side`.
+Keywords are recognized only when the complete identifier matches the keyword. For example, `island` is still an identifier token and is not interpreted as `is` followed by `land`.
 
 If `is` is intended to be ordinary text instead of DSL syntax, it can be written as a string token:
 
 ```text
 "is"
 ```
+
+#### Update Changes
+- The `contains` keyword was added in version 2.26.08.23.
+
 
 ## Symbols
 

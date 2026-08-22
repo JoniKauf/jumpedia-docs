@@ -26,14 +26,16 @@ attribute is value
 
 The available comparison operators are:
 
-| Operator | Meaning                                                           |
-| -------- | ----------------------------------------------------------------- |
-| `is`     | At least one slot matches the specified value                     |
-| `is not` | No slot matches the specified value                               |
-| `<`      | At least one slot is less than the specified value                |
-| `<=`     | At least one slot is less than or equal to the specified value    |
-| `>`      | At least one slot is greater than the specified value             |
-| `>=`     | At least one slot is greater than or equal to the specified value |
+| Operator       | Meaning                                                            |
+| -------------- | ------------------------------------------------------------------ |
+| `is`           | At least one slot matches the specified value.                     |
+| `is not`       | No slot matches the specified value.                               |
+| `contains`     | At least one slot contains the specified value as a substring.     |
+| `not contains` | No slot contains the specified value as a substring.               |
+| `<`            | At least one slot is less than the specified value.                |
+| `<=`           | At least one slot is less than or equal to the specified value.    |
+| `>`            | At least one slot is greater than the specified value.             |
+| `>=`           | At least one slot is greater than or equal to the specified value. |
 
 For example:
 
@@ -52,6 +54,10 @@ difficulty >= 5
 matches a task if at least one slot in its `difficulty` field is greater than or equal to `5`.
 
 The comparison does not require every slot in the field to match. A task with multiple slots can therefore match if just one of them satisfies the comparison.
+
+
+#### Update Changes
+- The `contains` and `not contains` comparison operators were added in version 2.26.08.23.
 
 ## Combining Filters
 
