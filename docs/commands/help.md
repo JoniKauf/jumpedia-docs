@@ -27,3 +27,6 @@ Commands for getting help about specific topics inside of Jumpedia.
 Shows an url that links to the documentation page of the specified command.
 
 </Command>
+
+#### Update Changes
+- The `help` command group and the command `help command` were added in version 2.26.08.24.
