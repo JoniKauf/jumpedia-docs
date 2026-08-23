@@ -1,7 +1,7 @@
 ---
 title: Attribute
 description: Commands for interacting with attributes.
-sidebar_position: 1
+sidebar_position: 2
 ---
 
 import Command, * as C from "@site/src/components/Command";

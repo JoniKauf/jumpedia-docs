@@ -1,7 +1,7 @@
 ---
 title: Server
 description: Commands for interacting with Discord servers.
-sidebar_position: 4
+sidebar_position: 5
 ---
 
 import Command, * as C from "@site/src/components/Command";

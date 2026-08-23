@@ -1,7 +1,7 @@
 ---
 title: Help
 description: Commands for getting help about specific topics.
-sidebar_position: 2
+sidebar_position: 1
 ---
 
 import Command, * as C from "@site/src/components/Command";

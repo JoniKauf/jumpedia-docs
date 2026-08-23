@@ -1,7 +1,7 @@
 ---
 title: List
 description: Commands for interacting with lists.
-sidebar_position: 3
+sidebar_position: 4
 ---
 
 import Command, * as C from "@site/src/components/Command";

@@ -1,7 +1,7 @@
 ---
 title: Task
 description: Commands for interacting with tasks.
-sidebar_position: 5
+sidebar_position: 6
 ---
 
 import Command, * as C from "@site/src/components/Command";

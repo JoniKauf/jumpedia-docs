@@ -1,7 +1,7 @@
 ---
 title: Community
 description: Commands for interacting with communities.
-sidebar_position: 2
+sidebar_position: 3
 ---
 
 import Command, * as C from "@site/src/components/Command";
