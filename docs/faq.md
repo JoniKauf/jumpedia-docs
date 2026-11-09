@@ -15,6 +15,6 @@ https://discord.gg/xjP7FzNKsV
 **A:** Jumpedia is now open source! Here are all relevant links:
 - **Jumpedia's Main Code Repository:** https://github.com/JoniKauf/jumpedia
 - **This Documentation's Code Repository:** https://github.com/JoniKauf/jumpedia-docs
-- **Jumpedia's Paste Code:** https://github.com/JoniKauf/jumpedia-paste
+- **Jumpedia's Paste Code Repository:** https://github.com/JoniKauf/jumpedia-paste
 
 Feel free to check them out and especially to help work on the codebase if you are interested!
