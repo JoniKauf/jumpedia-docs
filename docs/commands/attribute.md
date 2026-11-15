@@ -271,12 +271,17 @@ Once the migration is complete, the limits can be changed from `0–5` to the de
         {
             name: "new_collection_dsl_mapping",
             requirement: C.ArgumentRequirement.Required,
-            description: "The new collection of the attribute, specified via the Mapping DSL.",
+            description: "The new collection of the attribute, specified via the Mapping DSL. Must be a single underscore (_) if a file is specified.",
         },
         {
             name: "edit_mode",
             requirement: C.ArgumentRequirement.Required,
             description: "How the specified collection should be applied to the attribute.",
+        },
+        {
+            name: "new_collection_dsl_mapping_file",
+            requirement: C.ArgumentRequirement.Optional,
+            description: "A text file containing the new collection of the attribute, specified via the Mapping DSL. Used instead of new_collection_dsl_mapping.",
         },
     ]}
     permissions={[
@@ -324,6 +329,18 @@ The desired collection can be temporarily modified for the migration:
 When the collection is edited (in **overwrite mode** for this example), existing slots containing `Easy`, `Medium`, or `Hard` are resolved through these temporary aliases and stored as `Baby`, `Intermediate`, or `Advanced`, respectively.
 
 After the migration has completed, the temporary aliases (`Easy`, `Medium`, and `Hard`) can optionally be removed from the collection.
+
+A command parameter can contain at most 6000 characters, which is not enough for big collections. For those, the collection can be uploaded as a text file via `new_collection_dsl_mapping_file` instead. In that case, `new_collection_dsl_mapping` must be a single underscore (`_`), otherwise an error is shown.
+
+The file contains the same Mapping DSL text that would otherwise be written into `new_collection_dsl_mapping`. Unlike a command parameter, the file can contain line breaks, so each collection entry can be written on its own line:
+
+```text
+("Cap Kingdom": "Cap")
+("Cascade Kingdom": "Cascade")
+("Metro Kingdom": "Metro" "New Donk City")
+```
+
+The file must contain UTF-8 text and cannot be bigger than 100,000 bytes. The community's limit for the number of entries per collection applies as usual.
 
 </Command>
 
