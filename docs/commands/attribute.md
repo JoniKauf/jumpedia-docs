@@ -330,6 +330,10 @@ When the collection is edited (in **overwrite mode** for this example), existing
 
 After the migration has completed, the temporary aliases (`Easy`, `Medium`, and `Hard`) can optionally be removed from the collection.
 
+Aliases can be added to entries that are already in the collection with the **Combine With Current Collection - Merge Aliases On Value Collision** edit mode. Every specified entry whose value is already in the collection keeps its position and receives the specified aliases in addition to its current ones. All other specified entries are added to the end of the collection. An alias or value that already belongs to a different entry still results in an error.
+
+For example, with the current collection from above, editing the collection with `("Easy": "Simple")` in this edit mode gives `Easy` the aliases `Ez`, `E` and `Simple`, while `Medium` and `Hard` stay unchanged.
+
 A command parameter can contain at most 6000 characters, which is not enough for big collections. For those, the collection can be uploaded as a text file via `new_collection_dsl_mapping_file` instead. In that case, `new_collection_dsl_mapping` must be a single underscore (`_`), otherwise an error is shown.
 
 The file contains the same Mapping DSL text that would otherwise be written into `new_collection_dsl_mapping`. Unlike a command parameter, the file can contain line breaks, so each collection entry can be written on its own line:
