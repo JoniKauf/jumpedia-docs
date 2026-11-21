@@ -502,6 +502,8 @@ Their parameters are the same as documented on this page and optional parameters
 - A `user` is specified by the ID of the Discord user or by a mention of the user.
 - An `edit_mode` is specified by the name that Discord shows when selecting it, for example `Replace Current Field Mapping`.
 
+Before anything is executed, Jumpedia lists how many times each command appears in the file and asks for a confirmation. The commands are only executed after confirming. If the confirmation is aborted, or not given within 60 seconds, nothing changes.
+
 The file is executed in an **all or nothing** manner. If any command of the file fails, Jumpedia shows the line and the error of that command and none of the commands of the file are applied.
 
 Each command requires the same permissions as when it is used on its own.
