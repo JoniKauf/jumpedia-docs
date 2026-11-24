@@ -12,7 +12,7 @@ Jumpedia stores the following data about a user:
 
 * Their Discord ID,
 * the last username Jumpedia saw from that user
-* and heir meta rank
+* and their meta rank
 
 A user is independent of any specific community. When a user joins or interacts with a community, they become a **member** of that community.
 
