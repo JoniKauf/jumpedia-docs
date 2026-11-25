@@ -499,7 +499,7 @@ Only the following commands can be used in the file:
 
 Their parameters are the same as documented on this page and optional parameters can be left out. Two kinds of parameters are written differently than in Discord:
 
-- A `user` is specified by the ID of the Discord user or by a mention of the user.
+- A `user` is specified by the ID of the Discord user or by a mention of the user. Only users that Jumpedia already knows can be specified, for example because they have used Jumpedia before.
 - An `edit_mode` is specified by the name that Discord shows when selecting it, for example `Replace Current Field Mapping`.
 
 Before anything is executed, Jumpedia lists how many times each command appears in the file and asks for a confirmation. The commands are only executed after confirming. If the confirmation is aborted, or not given within 60 seconds, nothing changes.
