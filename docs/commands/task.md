@@ -450,3 +450,66 @@ Edits the aliases of the specified task according to the selected edit mode.
 Edits the field mapping of the specified task according to the selected edit mode.
 
 </Command>
+
+### Bulk
+
+<Command
+    command="tasks bulk"
+    args={[
+        {
+            name: "file",
+            requirement: C.ArgumentRequirement.Required,
+            description: "A text file containing the commands to execute, with one command per line.",
+        },
+    ]}
+    permissions={[
+        {
+            type: C.RankType.Community,
+            level: "Helper",
+            description: "Required when the file contains a command that creates a task.",
+        },
+        {
+            type: C.RankType.Community,
+            level: "Moderator",
+            description: "Required when the file contains a command that edits a task, or one that gives, takes or edits a task of another user.",
+        },
+    ]}
+>
+
+Executes all commands of the specified file in the order in which they are written.
+
+Each line of the file contains one command. A command is written the same way as when it is pasted into Discord: the command itself, followed by the name of each parameter with a colon and its value.
+
+```text
+/task create task_name: Railing Concussions list_name: Main aliases_dsl_sequence: RC field_mapping_dsl: (Location: "Metro Kingdom")
+/task give task_name_or_alias: Railing Concussions user: 123456789012345678 list_name: Main
+```
+
+Empty lines and lines starting with `#` are skipped. The file has to contain at least one command.
+
+Only the following commands can be used in the file:
+
+- `/task create`
+- `/task edit name`
+- `/task edit aliases`
+- `/task edit field_mapping`
+- `/task give`
+- `/task take`
+- `/task edit given`
+
+Their parameters are the same as documented on this page and optional parameters can be left out. Two kinds of parameters are written differently than in Discord:
+
+- A `user` is specified by the ID of the Discord user or by a mention of the user. Only users that Jumpedia already knows can be specified, for example because they have used Jumpedia before.
+- An `edit_mode` is specified by the name that Discord shows when selecting it, for example `Replace Current Field Mapping`.
+
+Before anything is executed, Jumpedia lists how many times each command appears in the file and asks for a confirmation. The commands are only executed after confirming. If the confirmation is aborted, or not given within 60 seconds, nothing changes.
+
+The file is executed in an **all or nothing** manner. If any command of the file fails, Jumpedia shows the line and the error of that command and none of the commands of the file are applied.
+
+Each command requires the same permissions as when it is used on its own.
+
+A value cannot contain the name of another parameter of the same command followed by a colon, because Jumpedia would treat it as the start of that parameter. For example, a task of `/task create` cannot be named `Example list_name: Main`.
+
+The file must contain UTF-8 text and cannot be bigger than 100,000 bytes.
+
+</Command>
